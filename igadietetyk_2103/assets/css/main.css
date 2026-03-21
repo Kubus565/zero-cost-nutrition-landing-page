@@ -17,34 +17,45 @@
   --shadow-cta: 0 4px 15px rgba(126, 217, 86, 0.3);
   --shadow-cta-hover: 0 6px 20px rgba(126, 217, 86, 0.4);
 
-  --max-w-container: 1100px;
+  /* Zmieniamy nazwę na taką, którą Tailwind v4 łatwiej "łyknie" */
+  --spacing-container: 1100px;
 }
-
-
 
 @layer base {
   html {
     @apply scroll-smooth overflow-x-hidden text-[16px];
   }
   body {
-    @apply font-body text-text-dark bg-bg-light leading-[1.6] overflow-x-hidden;
+    /* W v4 używamy var() lub bezpośredniej nazwy jeśli Tailwind ją zmapuje */
+    font-family: var(--font-body);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light);
+    @apply leading-[1.6] overflow-x-hidden;
   }
-  h1 { @apply font-heading font-semibold text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] leading-[1.2] mb-4; }
-  h2 { @apply font-heading font-semibold text-[1.7rem] md:text-[2rem] lg:text-[2.2rem] leading-[1.2] mb-4 text-center; }
-  h3 { @apply font-heading font-semibold text-[1.3rem] md:text-[1.5rem] leading-[1.2] mb-4; }
+  h1 { font-family: var(--font-heading); @apply font-semibold text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] leading-[1.2] mb-4; }
+  h2 { font-family: var(--font-heading); @apply font-semibold text-[1.7rem] md:text-[2rem] lg:text-[2.2rem] leading-[1.2] mb-4 text-center; }
+  h3 { font-family: var(--font-heading); @apply font-semibold text-[1.3rem] md:text-[1.5rem] leading-[1.2] mb-4; }
   
   p { @apply mb-4 text-text-muted; }
 }
 
 @layer components {
   .container {
-    @apply max-w-container mx-auto px-5 w-full;
+    /* Zamiast max-w-container, używamy bezpośrednio zmiennej */
+    max-width: var(--spacing-container);
+    @apply mx-auto px-5 w-full;
   }
   
   .cta-button {
-    @apply inline-block bg-primary-green text-white px-8 py-4 rounded-[50px] 
+    background-color: var(--color-primary-green);
+    box-shadow: var(--shadow-cta);
+    @apply inline-block text-white px-8 py-4 rounded-[50px] 
            font-bold text-[1.1rem] text-center transition-all duration-300 
-           shadow-cta hover:bg-primary-green-hover hover:-translate-y-0.5 hover:shadow-cta-hover border-none cursor-pointer;
+           hover:bg-primary-green-hover hover:-translate-y-0.5 border-none cursor-pointer;
+  }
+  
+  .cta-button:hover {
+    box-shadow: var(--shadow-cta-hover);
   }
 
   .hero-bg-custom {

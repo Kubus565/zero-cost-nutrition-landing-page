@@ -51,6 +51,9 @@ pricing_section:
         - "**Indywidualny jadłospis**"
         - "Stały kontakt (WhatsApp)"
         - "Cotygodniowe raporty"
+        - "Indywidualny jadłospis"
+        - "Stały kontakt (WhatsApp)"
+        - "Cotygodniowe raporty"
     - name: "Pakiet 3 Miesiące"
       price: "1299 zł"
       desc: "Trwała zmiana nawyków"
@@ -63,6 +66,26 @@ about_section:
   title: "Dlaczego sama rozpiska diety często nie wystarcza"
   image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1500&q=80"
   quote: "„Kiedy zaczynałam pracę z pacjentami zrozumiałam jedno: oni nie potrzebują kolejnej rozpiski z tabelkami. Potrzebują kogoś, kto rozumie, że przygotowanie posiłku po 10 godzinach pracy to nie hobby...”"
+  
+frustration_section:
+  title: "Gdzie zaczyna się frustracja"
+  problems:
+    - "Waga stoi w miejscu pomimo wyrzeczeń i wysiłku."
+    - "Gotowanie zaczyna przypominać drugi etat po pracy."
+    - "Boisz się, że spotkanie z dietetykiem to godziny wykładów o zakazach."
+    - "Czujesz się zagubiony(a) w sprzecznych zaleceniach."
+    - "Zastanawiasz się ciągle: ile, kiedy i jak właściwie powinno się jeść."
+  conclusion: "Najczęściej problem polega na tym, że dieta została dopasowana do idealnych założeń, a nie do Twojego prawdziwego życia."
+
+solutions_section:
+  title: "Dieta może wyglądać zupełnie inaczej"
+  subtitle: "Nie musisz:"
+  items:
+    - "spędzać połowy dnia na gotowaniu"
+    - "rezygnować z normalnego jedzenia"
+    - "liczyć obsesyjnie każdej kalorii"
+    - "żyć według sztywnej tabelki"
+    - "czuć się winny(a), gdy zjesz coś „spoza diety”"
 
 faq_section:
   title: "Najczęstsze pytania"
