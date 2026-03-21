@@ -1,0 +1,7 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'pl'
+title = 'Iga Dietetyk'
+theme = [] # zostaw puste, bo robimy własne layouty
+
+[params]
+  description = 'Iga Dietetyk - Schudnij raz na zawsze'

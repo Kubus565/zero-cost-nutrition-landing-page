@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #7ED956;
+  --color-primary-green-hover: #6cc747;
+  --color-bg-light: #FFFFFF;
+  --color-bg-alt: #F9FBF9;
+  --color-text-dark: #1A1A1A;
+  --color-text-muted: #4A4A4A;
+  --color-border-color: #EAEAEA;
+
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Playfair Display", serif;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-cta: 0 4px 15px rgba(126, 217, 86, 0.3);
+  --shadow-cta-hover: 0 6px 20px rgba(126, 217, 86, 0.4);
+
+  --max-w-container: 1100px;
+}
+
+
+
+@layer base {
+  html {
+    @apply scroll-smooth overflow-x-hidden text-[16px];
+  }
+  body {
+    @apply font-body text-text-dark bg-bg-light leading-[1.6] overflow-x-hidden;
+  }
+  h1 { @apply font-heading font-semibold text-[1.8rem] md:text-[2.4rem] lg:text-[2.8rem] leading-[1.2] mb-4; }
+  h2 { @apply font-heading font-semibold text-[1.7rem] md:text-[2rem] lg:text-[2.2rem] leading-[1.2] mb-4 text-center; }
+  h3 { @apply font-heading font-semibold text-[1.3rem] md:text-[1.5rem] leading-[1.2] mb-4; }
+  
+  p { @apply mb-4 text-text-muted; }
+}
+
+@layer components {
+  .container {
+    @apply max-w-container mx-auto px-5 w-full;
+  }
+  
+  .cta-button {
+    @apply inline-block bg-primary-green text-white px-8 py-4 rounded-[50px] 
+           font-bold text-[1.1rem] text-center transition-all duration-300 
+           shadow-cta hover:bg-primary-green-hover hover:-translate-y-0.5 hover:shadow-cta-hover border-none cursor-pointer;
+  }
+
+  .hero-bg-custom {
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 100%), 
+                      url('https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=2070&auto=format&fit=crop');
+  }
+}
