@@ -1,0 +1,16 @@
+{{ $src := .src }}
+{{ $img := resources.Get $src }}
+
+{{ if $img }}
+  {{/* Konfiguracja: zmiana rozmiaru na 800px szerokości i format WebP */}}
+  {{ $optimized := $img.Resize "800x webp q80" }}
+  
+  <img src="{{ $optimized.RelPermalink }}" 
+       alt="{{ .alt }}" 
+       class="{{ .class }}" 
+       loading="lazy" 
+       width="{{ $optimized.Width }}" 
+       height="{{ $optimized.Height }}">
+{{ else }}
+  <p>Obrazek nie odnaleziony: {{ $src }}</p>
+{{ end }}

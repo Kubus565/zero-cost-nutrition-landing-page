@@ -1,0 +1,7 @@
+<ul class="text-left text-[0.95rem] text-text-muted space-y-2.5">
+                    {{ range .problems }}
+                    <li class="relative pl-[25px] before:content-['✓'] before:absolute before:left-0 before:text-primary-green before:font-bold">
+                        {{ . | markdownify }}
+                    </li>
+                    {{ end }}
+                </ul>

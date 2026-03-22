@@ -2,6 +2,7 @@
 
 @theme {
   --color-primary-green: #7ED956;
+  --color-primary-red: #d9534f;
   --color-primary-green-hover: #6cc747;
   --color-bg-light: #FFFFFF;
   --color-bg-alt: #F9FBF9;
@@ -18,7 +19,7 @@
   --shadow-cta-hover: 0 6px 20px rgba(126, 217, 86, 0.4);
 
   /* Zmieniamy nazwę na taką, którą Tailwind v4 łatwiej "łyknie" */
-  --spacing-container: 1100px;
+  --spacing-container: 900px;
 }
 
 @layer base {

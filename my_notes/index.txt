@@ -84,7 +84,6 @@
     </div>
 </section>
 
-
 {{ with .Params.about_section }}
 <section class="py-[100px] bg-white">
     <div class="container">
@@ -96,13 +95,7 @@
                 </blockquote>
             </div>
             <div class="flex justify-center order-first lg:order-last">
-                <div class="flex justify-center order-first lg:order-last">
-    {{ partial "image.html" (dict 
-        "src" .image 
-        "alt" "Dietetyk Iga" 
-        "class" "max-w-[350px] rounded-[16px] shadow-sm"
-    ) }}
-</div>
+                <img src="{{ .image }}" alt="Dietetyk" class="max-w-[350px] rounded-[16px] shadow-sm">
             </div>
         </div>
         <div class="text-center">
@@ -110,54 +103,7 @@
         </div>
     </div>
 </section>
-{{ end }}    
-
-<section class="py-20 bg-bg-alt">
-    <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] mb-[30px]">
-            
-            {{ with .Params.frustration_section }}
-            <div class="bg-white p-10 rounded-[16px] border border-border-color shadow-sm">
-                <h3 class="text-primary-red mb-6">{{ .title }}</h3>
-                
-                <ul class="text-left text-[0.95rem] text-text-muted space-y-3">
-        {{ range .problems }}
-        <li class="relative pl-[35px] before:content-['✕'] before:absolute before:left-0 before:top-0 before:text-primary-red before:font-bold before:text-lg">
-            {{ . | markdownify }}
-        </li>
-        {{ end }}
-    </ul>
-                
-                <p class="font-medium text-text-dark border-t border-border-color pt-5 mt-5 text-[0.95rem]">
-                    {{ .conclusion }}
-                </p>
-            </div>
-            {{ end }}
-
-            {{ with .Params.solutions_section }}
-            <div class="bg-white p-10 rounded-[16px] border border-border-color shadow-sm">
-                <h3 class="text-primary-green mb-6">{{ .title }}</h3>
-                <p class="font-medium text-text-dark mb-2.5">{{ .subtitle }}</p>
-                
-                <ul class="text-left text-[0.95rem] text-text-muted space-y-2.5">
-                    {{ range .items }}
-                    <li class="relative pl-[25px] before:content-['✓'] before:absolute before:left-0 before:text-primary-green before:font-bold">
-                        {{ . | markdownify }}
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-            {{ end }}
-
-        </div>
-
-        <div class="text-center mt-12">
-            <a href="{{ $.Params.hero.cta_link | default "#" }}" class="cta-button">
-                {{ $.Params.hero.cta_text }}
-            </a>
-        </div>
-    </div>
-</section>
+{{ end }}
 
 <section class="py-20 bg-white">
     <div class="container">
