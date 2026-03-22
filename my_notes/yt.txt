@@ -1,0 +1,11 @@
+<div class="w-full max-w-[560px] mx-auto lg:max-w-none">
+                <div class="video-container shadow-md border-4 border-white rounded-[24px] overflow-hidden">
+                    <iframe 
+                        src="https://www.youtube.com/embed/{{ .youtube_id }}" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>

@@ -9,6 +9,7 @@ hero:
   cta_text: "Umów bezpłatną konsultację"
   cta_link: "#"
   friction_reducer: "Niezobowiązujące 15 minut - nic nie ryzykujesz"
+  youtube_id: "RIWsnfXUR_k"
 
 testimonials_section:
   title: "Jak wygląda życie, gdy dieta jest dopasowana do Twojego życia"

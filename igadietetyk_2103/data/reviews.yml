@@ -1,0 +1,13 @@
+# data/reviews.yml
+items:
+  - name: "Michał Wójcik"
+    date: "3 miesiące temu"
+    avatar: "https://lh3.googleusercontent.com/a/ACg8ocImp8646L9ipiAdntmZnOXf7z1ON0IJTvJH0qhMEZQ9dpTPZQ=w108-h108-p-rp-mo-br100"
+    platform: "google"
+    text: "W ciągu 3 miesięcy udało mi się zrzucić 12 kg..."
+  - name: "Anna Nowak"
+    date: "1 miesiąc temu"
+    avatar: "http://googleusercontent.com/profile/picture/1"
+    platform: "google"
+    text: "Świetne podejście, przepisy są pyszne!"
+  # Tutaj dodawaj kolejne opinie
