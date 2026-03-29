@@ -12,7 +12,7 @@ hero:
   youtube_id: ""
 
 testimonials_section:
-  title: "Jak wygląda życie, gdy dieta jest dopasowana do Twojego życia"
+  title: "Jak wygląda życie, gdy dieta jest dopasowana do Ciebie"
   items:
     - name: "Michał Wójcik"
       date: "3 miesiące temu"
