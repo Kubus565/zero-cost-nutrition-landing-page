@@ -4,6 +4,8 @@ Profesjonalna, wysokowydajna strona sprzedażowa zaprojektowana dla dietetyka w 
 
 🔗 **Adres strony:** [igadietetyk.pages.dev](https://igadietetyk.pages.dev)
 
+<img width="1591" height="843" alt="image" src="https://github.com/user-attachments/assets/f264f73c-2617-4d52-a471-cedbea47f957" />
+
 ## 🎯 Cel Biznesowy
 Strona jest **narzędziem sprzedażowym** skoncentrowanym na konwersji (umówienie płatnej konsultacji). 
 
